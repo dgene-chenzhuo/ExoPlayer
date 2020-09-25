@@ -16,7 +16,7 @@ apply from: '../../constants.gradle'
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
-    
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -25,6 +25,8 @@ android {
     defaultConfig {
         minSdkVersion project.ext.minSdkVersion
         targetSdkVersion project.ext.targetSdkVersion
+        versionCode project.ext.releaseVersionCode
+        versionName project.ext.releaseVersion
         consumerProguardFiles 'proguard-rules.txt'
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'

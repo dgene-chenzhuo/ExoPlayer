@@ -25,6 +25,8 @@ android {
     defaultConfig {
         minSdkVersion project.ext.minSdkVersion
         targetSdkVersion project.ext.targetSdkVersion
+        versionCode project.ext.releaseVersionCode
+        versionName project.ext.releaseVersion
     }
 
     testOptions.unitTests.includeAndroidResources = true
